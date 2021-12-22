@@ -5,6 +5,7 @@ const {
   getAllTasks,
   createNewTask,
   changeTaskInfo,
+  changeTaskFilter,
   deleteTask
 } = require('../controllers/task.controller');
 
@@ -12,6 +13,7 @@ const {
 router.get('/allTasks', getAllTasks);
 router.post('/createTask', createNewTask);
 router.patch('/updateTask', changeTaskInfo);
+router.patch('/updateTaskFilter', changeTaskFilter);
 router.delete('/deleteTask', deleteTask);
 
 //User routes
